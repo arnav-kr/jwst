@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head prefix="og: https://ogp.me/ns# 
+https://ogp.me/ns/website#">
+  <!-- basic config -->
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://jwst.earth/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>James Web Space Telescope</title>
+
+  <!-- icons -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- SEO basic meta tags -->
+  <meta name="title" content="James Webb Space Telescope">
+  <meta name="description" content="Capturing the universe in stunning detail 💫">
+  <meta name="keywords"
+    content="jwst, james webb space telescope, nasa, esa, observatory, infrared, telescope, science, webb">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Arnav Kumar">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jwst.earth/">
+  <meta property="og:title" content="James Webb Space Telescope">
+  <meta property="og:description" content="Capturing the universe in stunning detail 💫">
+  <meta property="og:image" content="/assets/og_image.jpg">
+  <meta property="og:image:secure_url" content="/assets/og_image.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="600" />
+  <meta property="og:image:alt" content="James Webb Space Telescope" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://jwst.earth/">
+  <meta property="twitter:title" content="James Webb Space Telescope">
+  <meta property="twitter:description" content="Capturing the universe in stunning detail 💫">
+  <meta property="twitter:image" content="/assets/og_image.jpg">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img src="/assets/logo.svg" alt="JWST" />
+    <button id="player-control" title="play/pause background music">
+      <svg id="play" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+        fill="currentColor">
+        <path d="M320-200v-560l440 280-440 280Z" />
+      </svg>
+      <svg id="pause" class="hidden" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+        width="24px" fill="currentColor">
+        <path d="M560-200v-560h160v560H560Zm-320 0v-560h160v560H240Z" />
+      </svg>
+    </button>
+  </header>
+  <main>
+    <section class="hero">
+      <h2 class="wlcm">Welcome Traveller!</h2>
+      <div class="indicator-container">
+        <button class="scroll-indicator" id="scroll">
+          <span class="scroll-indicator-dot"></span>
+        </button>
+        <span>scroll to explore</span>
+      </div>
+    </section>
+    <section class="model">
+      <div>
+        <h1 class="h-t">James Webb Space Telescope</h1>
+        <p class="h-sub">&nbsp;</p>
+      </div>
+      <canvas id="model-renderer"></canvas>
+    </section>
+    <section class="images" id="images-wrapper">
+      <h2>Pictures</h2>
+      <div class="wrapper wrapper-1">
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/2024/131/01J5NSECSVDPZ6XWKM5M38MPDK"
+          class="image">
+          <img src="/assets/pictures/STScI-01J5NSEJTP6AWGVE845JMY21KT.png" alt="Digel Cloud 2S" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/2024/125/01J0BY3XJBEG8K740S8M7N07Z9"
+          class="image">
+          <img src="/assets/pictures/STScI-01J0BY5NWGXKR165XPC66KS4PT.png" alt="L1527 and Protostar (MIRI Image)" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/2024/110/01HQNV4GP6PR6E7ZSJXRRBQQDS"
+          class="image">
+          <img src="/assets/pictures/STScI-01HQNV4QZ16BPB3TBEVMYS3G7N.png" alt="NGC 604 (NIRCam Image)" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/2024/111/01HQK9AJTH9SF851JA76S5XH7V"
+          class="image">
+          <img src="/assets/pictures/STScI-01HQK9C8HHBQ275Y9C4CVH0RBN.png"
+            alt="Parallel Field to Protostar IRAS 23385 (MIRI Image)" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/2023/151/01HFC82GPW3B8RPAJ3VWXJEAHZ"
+          class="image">
+          <img src="/assets/pictures/STScI-01HFC83QXT6N4MRJ1RS4D5KFJS.png" alt="IC 348 (NIRCam Image)" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/2023/137/01HBBMDH12APPEGB8DXVVEP8XA"
+          class="image">
+          <img src="/assets/pictures/STScI-01HBBMDW8B4A90QZ64RGQJHRV1.png" alt="Crab Nebula (NIRCam and MIRI Image)" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/2023/128/01H449193V5Q4Q6GFBKXAZ3S03"
+          class="image">
+          <img src="/assets/pictures/STScI-01H4491MFFYDF52V1ZATNMCAAK.png" alt="Rho Ophiuchi (NIRCam Image)" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/2022/033/01G70BGTSYBHS69T7K3N3ASSEB"
+          class="image">
+          <img src="/assets/pictures/STScI-01G70BN48JR6M4ZTW3642X2D2H.png" alt="Southern Ring Nebula (NIRCam Image)" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/2023/129/01H2V053B1GCZZ0H28EEMK13TC"
+          class="image">
+          <img src="/assets/pictures/STScI-01H2V05HTQZBKQ855Q2WREMF2M.png" alt="Orion Bar (MIRI Image)" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/2023/116/01GXS09CCZWBFQKNHCG360W6F1"
+          class="image">
+          <img src="/assets/pictures/STScI-01GXS0A0ZQE6VGE2V65D3WYQY5.png" alt="Arp 220 (NIRCam and MIRI image)" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/2022/023/01G1Q6AWRY5DW179EP6B8AJKFK"
+          class="image">
+          <img src="/assets/pictures/STScI-01G1Q6CSGZG0K9MK6JXXR9120C.png"
+            alt="James Webb Space Telescope Artist Conception" />
+        </a>
+      </div>
+      <div class="wrapper wrapper-2">
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/2022/031/01G77PKB8NKR7S8Z6HBXMYATGJ"
+          class="image">
+          <img src="/assets/pictures/STScI-01G77PKYA4T05YKJ3EDQ36NZCX.png"
+            alt="“Cosmic Cliffs” in the Carina Nebula (NIRCam Image)" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/2022/041/01GA76MYFN0FMKNRHGCAGGYCVQ"
+          class="image">
+          <img src="/assets/pictures/STScI-01GA76N47MR44PNWZ4NAYZBKG5.png" alt="Tarantula Nebula (NIRCam Image)" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/4259-Image" class="image">
+          <img src="/assets/pictures/STScI-01EVSZFRKQJGJ166919T712YDF.png"
+            alt="Webb's Primary Mirror Segments Go into Cryogenic Testing" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/4262-Image" class="image">
+          <img src="/assets/pictures/STScI-01EVSZFHTXHXVP14PATCETH1GS.png" alt="Webb's 5-Layer Sunshield" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/2022/057/01GKMKC1AF19PVC0X5JF6BH5X0"
+          class="image">
+          <img src="/assets/pictures/STScI-01GKMKC98XDA570H38QN1KB3BZ.png"
+            alt="Carina Nebula Jets (NIRCam Narrowband Filters Compass Image)" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/2024/119/01HV4BAFBCNVV1VFQ4XMASPGV9"
+          class="image">
+          <img src="/assets/pictures/STScI-01HV4BDR9C8MNJGJNS9TNE78YX.png" alt="Horsehead Nebula (NIRCam Image)" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/01GK2KKTR81SGYF24YBGYG7TAP"
+          class="image">
+          <img src="/assets/pictures/STScI-01GK2KM4N6Q1XGTKDVM4AQ3HQ7.png"
+            alt="Pillars of Creation (NIRCam and MIRI Composite Image)" />
+        </a>
+        <a target="_blank" href="https://webbtelescope.org/contents/media/images/2023/111/01GTWBK1FNPPJSWZ0DK1JB76SN"
+          class="image">
+          <img src="/assets/pictures/STScI-01GTWBKC8G8ZBW11BA0TE7BNS1.png" alt="WR 124 (MIRI Image)" />
+        </a>
+      </div>
+  </main>
+  <footer>
+    <p>
+      <b>Credits:</b>
+      <span>Designed and Developed by <a target="_blank" href="https://github.com/arnav-kr">Arnav Kumar</a></span>
+      <span>•</span>
+      <span>Images/assets from <a target="_blank" href="https://webbtelescope.org/images">NASA</a></span>
+      <span>•</span>
+      <sapn>3D Model at <a
+          href="https://sketchfab.com/3d-models/jwst-james-webb-space-telescope-6c92c08a672640afb58ee44d248fd0fe">Sketchfab</a>
+        </span>
+    </p>
+  </footer>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
